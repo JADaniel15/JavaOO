@@ -1,6 +1,6 @@
 class conta{
 	double saldo;
-	int agencia;
+	int agencia = 42;
 	int numero;
 	String titular;
 }
