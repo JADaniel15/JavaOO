@@ -3,7 +3,7 @@ class conta{
 	private int agencia;
 	private int numero;
 	private Cliente titular;
-	private  static int total;
+	private  static int total = 0;
 	
 	public conta(int agencia, int numero) {
 		conta.total++;
@@ -43,7 +43,7 @@ class conta{
 	
 	public void setNumero(int numero){
 		if(numero <=0) {
-			System.out.println("N�o pode valor menor <= 0 ");
+			System.out.println("Nao pode valor menor <= 0 ");
 			return;
 		}
 		this.numero = numero;
@@ -53,7 +53,7 @@ class conta{
 	}
 	public void setAgencia(int agencia) {
 		if(agencia <= 0) {
-			System.out.println("N�o pode valor menor a 0 ");
+			System.out.println("Nao pode valor menor a 0 ");
 			return;
 		}
 		this.agencia = agencia;
@@ -64,7 +64,10 @@ class conta{
 	public void setTitular(Cliente titular) {
 		this.titular = titular;
 	}
-	public int getTotal() {
+	public  int getTotal() {
 		return conta.total;
+	}
+	public  int setTotal() {
+		return total; 
 	}
 }
