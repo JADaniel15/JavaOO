@@ -1,5 +1,5 @@
-class conta{
-	private double saldo;
+public  abstract class conta{
+	protected double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular;
@@ -15,9 +15,7 @@ class conta{
 		//System.out.println("criando uma nova conta "  +  this.numero);
 	}
 	
-	 public void deposita(double valor) {
-		this.saldo += valor;
-	}
+	 public  abstract void deposita(double valor);
 	 
 	public boolean saque(double valor){
 		if(this.saldo >= valor) {
