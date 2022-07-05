@@ -1,3 +1,4 @@
+package modelo;
 
 public class ContaPoupanca extends Conta {
 	public ContaPoupanca(int agencia, int numero) {
