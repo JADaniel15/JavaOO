@@ -1,4 +1,4 @@
-public  abstract class conta{
+public  abstract class Conta{
 	protected double saldo;
 	private int agencia;
 	private int numero;
@@ -7,8 +7,8 @@ public  abstract class conta{
 	
 
 	
-	public conta(int agencia, int numero) {
-		conta.total++;
+	public Conta(int agencia, int numero) {
+		Conta.total++;
 		//System.out.println("o total de contas sao " + conta.total);
 		this.agencia = agencia;
 		this.numero = numero;
@@ -17,21 +17,17 @@ public  abstract class conta{
 	
 	 public  abstract void deposita(double valor);
 	 
-	public boolean saque(double valor){
-		if(this.saldo >= valor) {
-			this.saldo -= valor;
-			return true;
-		} else {
-			return false;
+	public void saque(double valor) throws SaldoInsuficienteException{
+		if(this.saldo < valor) {
+			throw new SaldoInsuficienteException("Saldo: " + this.saldo + ", Valor: " + valor );
 		}
+		this.saldo -= valor;
 	}
 	
-	public boolean transfere(double valor, conta destino) {
-		if(this.saque(valor)) {
+	public void transfere(double valor, Conta destino)  throws SaldoInsuficienteException{
+		this.saque(valor); 
 			destino.deposita(valor);
-			return true;
-		} 
-			return false;
+		
 	}
 	public double getSaldo() {
 		return this.saldo;
@@ -64,7 +60,7 @@ public  abstract class conta{
 		this.titular = titular;
 	}
 	public  int getTotal() {
-		return conta.total;
+		return Conta.total;
 	}
 	public  int setTotal() {
 		return total; 

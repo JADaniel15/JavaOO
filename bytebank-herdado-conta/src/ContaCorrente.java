@@ -1,13 +1,13 @@
 
-public class ContaCorrente extends conta implements Tributavel {
+public class ContaCorrente extends Conta implements Tributavel {
 	
 	public ContaCorrente(int agencia, int numero){
 		super(agencia, numero);
 	}
 	@Override
-	public boolean saque(double valor) {
+	public void saque(double valor) throws SaldoInsuficienteException {
 		double valorSacar = valor + 0.2;
-		return super.saque(valorSacar);
+		super.saque(valorSacar);
 	}
 	@Override
 	public void deposita(double valor) {
