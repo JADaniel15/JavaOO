@@ -1,16 +1,17 @@
-package teste;
+package br.com.bytebank.banco.teste;
 
+import br.com.bytebank.banco.modelo.*;
 
 public class TesteTributaveis {
 
 	public static void main(String[] args) {
 		
-		modelo.ContaCorrente cc = new modelo.ContaCorrente(222, 333);
+		ContaCorrente cc = new ContaCorrente(222, 333);
 		cc.deposita(100.0);
 		
-		modelo.SeguroDeVida seguro = new modelo.SeguroDeVida();
+		SeguroDeVida seguro = new SeguroDeVida();
 		
-		modelo.CalculadorDeImposto calc = new modelo.CalculadorDeImposto();
+		CalculadorDeImposto calc = new CalculadorDeImposto();
 		calc.registra(cc);
 		calc.registra(seguro);
 		
