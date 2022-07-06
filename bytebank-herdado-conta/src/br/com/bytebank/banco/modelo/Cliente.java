@@ -1,3 +1,11 @@
+/**
+ * Classe que representa um cliente.
+ *
+ * 
+ * 
+ * @author jasoul
+ * @version 0.1
+ */
 package br.com.bytebank.banco.modelo;
 
 public class Cliente {
