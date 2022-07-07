@@ -4,7 +4,7 @@
  */
 package br.com.bytebank.banco.modelo;
 
-public  abstract class Conta{
+public  abstract class Object{
 	protected double saldo;
 	private int agencia;
 	private int numero;
@@ -17,8 +17,8 @@ public  abstract class Conta{
 	 * @param agencia
 	 * @param numero
 	 */
-	public Conta(int agencia, int numero) {
-		Conta.total++;
+	public Object(int agencia, int numero) {
+		Object.total++;
 		//System.out.println("o total de contas sao " + conta.total);
 		this.agencia = agencia;
 		this.numero = numero;
@@ -38,7 +38,7 @@ public  abstract class Conta{
 		this.saldo -= valor;
 	}
 	
-	public void transfere(double valor, Conta destino)  throws SaldoInsuficienteException{
+	public void transfere(double valor, Object destino)  throws SaldoInsuficienteException{
 		this.saque(valor); 
 			destino.deposita(valor);
 		
@@ -74,7 +74,7 @@ public  abstract class Conta{
 		this.titular = titular;
 	}
 	public  int getTotal() {
-		return Conta.total;
+		return Object.total;
 	}
 	public  int setTotal() {
 		return total; 
