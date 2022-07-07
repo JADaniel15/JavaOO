@@ -4,7 +4,7 @@ import br.com.bytebank.banco.modelo.*;
 
 public class TesteSaque {
 	public static void main(String[] args) {
-		Object conta  = new ContaCorrente(123, 321);
+		ContaCorrente conta  = new ContaCorrente(123, 321);
 		
 		conta.deposita(200.0);
 		try {
