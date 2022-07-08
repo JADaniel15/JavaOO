@@ -1,5 +1,8 @@
 package br.com.bytebank.banco.teste.util;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TesteOutrosWrappers {
 
 	public static void main(String[] args) {
@@ -12,7 +15,14 @@ public class TesteOutrosWrappers {
 		
 		Boolean bRef = Boolean.TRUE;
 		System.out.println(bRef.booleanValue());
-
+		
+		Number  refNumero = Double.valueOf(29.9);
+		
+		List<Number> lista = new ArrayList<>();
+		lista.add(10);
+		lista.add(32.2);
+		lista.add(25.6f);
+		
 	}
 
 }
