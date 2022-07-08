@@ -10,7 +10,7 @@ public class TesteArrayListEquais {
 	public static void main(String[] args) {
 		
 		
-		
+		//generics
 		ArrayList<Conta> lista = new ArrayList<Conta>();
 	  
 		Conta cc = new ContaCorrente(22 ,11); lista.add(cc);
