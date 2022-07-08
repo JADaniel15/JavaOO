@@ -9,10 +9,10 @@ public class TesteGuardadorReferencias {
 
             GuardadorDeReferencias guardador = new GuardadorDeReferencias();
 
-            ContaCorrente cc = new ContaCorrente(22, 11);
+            Conta cc = new ContaCorrente(22, 11);
             guardador.adiciona(cc);
 
-            ContaCorrente cc2 = new ContaCorrente(22, 22);
+            Conta cc2 = new ContaCorrente(22, 22);
             guardador.adiciona(cc2);
 
             int tamanho = guardador.getQuantidadeDeElementos();

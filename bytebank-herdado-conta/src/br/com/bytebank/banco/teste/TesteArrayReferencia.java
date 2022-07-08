@@ -1,6 +1,6 @@
 package br.com.bytebank.banco.teste;
 
-import br.com.bytebank.banco.modelo.Cliente;
+//import br.com.bytebank.banco.modelo.Cliente;
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
@@ -9,7 +9,7 @@ public class TesteArrayReferencia {
 
 	public static void main(String[] args) {
 		
-		Object[] referencia= new Object[5];
+		Conta[] referencia= new Conta[5];
 		
 		
 		ContaCorrente cc1 = new ContaCorrente(22, 11);

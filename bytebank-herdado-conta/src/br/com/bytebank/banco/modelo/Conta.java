@@ -80,7 +80,7 @@ public  abstract class Conta extends Object{
 		return total; 
 	}
 	
-	
+	// Generics
 	public boolean equals(Object ref) {
 		
 		Conta outra = (Conta) ref;
