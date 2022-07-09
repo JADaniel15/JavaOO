@@ -1,10 +1,8 @@
 package br.com.bytebank.banco.teste.util;
 
 import java.util.ArrayList;
-//import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.function.Consumer;
 
 import br.com.bytebank.banco.modelo.Cliente;
 import br.com.bytebank.banco.modelo.Conta;

@@ -1,7 +1,6 @@
 package br.com.bytebank.banco.teste.util;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -53,7 +52,7 @@ public class TesteClasseAnonima {
         }
 	});
         
-        Comparator<Conta> comp = new Comparator<Conta>(){
+        	new Comparator<Conta>(){
 
         	@Override
         	public int compare(Conta c1, Conta c2) {

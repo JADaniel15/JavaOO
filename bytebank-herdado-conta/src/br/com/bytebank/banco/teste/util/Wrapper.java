@@ -7,11 +7,11 @@ public class Wrapper {
 
 	public static void main(String[] args) {
 		  Integer idadeRef = 29;
-		  int primitivo = new Integer(21);
+		 // int primitivo = new Integer(21);
 		  
 		  List<Integer> lista = new ArrayList<>();
 	        lista.add(idadeRef); //ok
-	        lista.add(primitivo); //autoboxing
+	       // lista.add(primitivo); //autoboxing
 	        
 	        int i1 = lista.get(0);  //unboxing
 	        Integer i2 = lista.get(1);  //ok
